@@ -74,13 +74,19 @@ export default function Home() {
 
         <section className='min-h-screen'>
           <Navbar resume={'./resume.pdf'} darkmode={darkMode} handleDarkMode={handleDarkMode}/>
-          <Intro name="Eunico Cornelius" role="Developer and Designer" desc="Globally adapt professional developer providing SAAS services for programming and prototyping content needs. Contact me down below and let's get crackin!"/>
-          <SocialMedia socialList={tempSocialMedia}/>
-          <RoundedAvatar avatar={deved}/>
+          <div className='flex flex-col md:flex-row md:mt-28'>
+            <div className='flex-1 flex justify-center align-middle'>
+              <RoundedAvatar avatar={deved}/>
+            </div>
+            <div className='flex-1 flex justify-center align-middle flex-col'>
+              <Intro name="Eunico Cornelius" role="Developer and Designer" desc="Globally adapt professional developer providing SAAS services for programming and prototyping content needs. Contact me down below and let's get crackin!"/>
+              <SocialMedia socialList={tempSocialMedia}/>
+            </div>
+          </div>
         </section>
 
         {/* Second Section */}
-        <section>
+        <section className='mb-32'>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Skills I Offer</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
