@@ -2,6 +2,7 @@
 //        - Replace image with your own face
 //        - Improve Portfolio section into something more animated and interactive
 //        - Add accessibility functionality using arrow keys
+//        - Move mock data somewhere else to prevent bloating
 
 import Head from 'next/head'
 import deved from '../public/dev-ed-wave.png'
