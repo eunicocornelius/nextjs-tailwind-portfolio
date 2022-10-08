@@ -12,7 +12,8 @@ module.exports = {
         burtons: "burtons",
       },
       animation: {
-        'blob': 'blob ease-in-out infinite 8s, spin 100s linear infinite',
+        'blob': 'blob ease-in-out infinite 8s',
+        'blob-spin': 'blob ease-in-out infinite 8s, spin 100s linear infinite',
       },
       keyframes: {
         blob: {
