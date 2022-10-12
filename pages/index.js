@@ -15,6 +15,7 @@ import RoundedAvatar from './components/RoundedAvatar'
 import SocialMedia from './components/SocialMedia'
 import SkillList from './components/SkillList'
 import Portfolio from './components/Portfolio'
+import ContactForm from './components/ContactForm'
 
 export default function Home() {
 
@@ -144,6 +145,7 @@ export default function Home() {
             </p>
           </div>
           <Portfolio portfolioList={portfolioList}/>
+          <ContactForm/>
         </section>
       </main>
     </div>
