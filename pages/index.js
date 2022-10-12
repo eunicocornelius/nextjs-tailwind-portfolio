@@ -34,7 +34,7 @@ export default function Home() {
       tools: ['Photoshop','Figma','Adobe XD']
     },
     {
-      title:'Clean programming',
+      title:'Clean Programming',
       image:'/../public/code.png',
       desc:'Algorithm understanding, clean programming accompanied by fast learning to achieve high softwaree standards.',
       toolTitle: 'Programming Languages I Use',
