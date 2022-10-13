@@ -9,7 +9,7 @@ function Skill({title, image, desc, toolTitle, tools}) {
       <p className='py-2 dark:text-gray-300'>{desc}</p>
       <h4 className=' py-4 text-teal-600'>{toolTitle}</h4>
       {
-        tools.map((tool, index) => {
+        tools?.map((tool, index) => {
             return <p key={index} className=' text-gray-800 py-1 dark:text-gray-400'>{tool}</p>
         })
       }

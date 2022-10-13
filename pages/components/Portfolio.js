@@ -5,7 +5,7 @@ function Portfolio({portfolioList}) {
   return (
     <div className='flex flex-col gap-20 py-10 lg:flex-row lg:flex-wrap'>
         {
-            portfolioList.map((portfolio, index)=>{
+            portfolioList?.map((portfolio, index)=>{
                 return(
                     <div className='basis-1/3 flex-1 rounded-xl overflow-hidden' href={portfolio.url} key={index}>
                         <a href={portfolio.url} target="_blank" rel="noopener noreferrer">
