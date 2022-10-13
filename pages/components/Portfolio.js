@@ -8,7 +8,7 @@ function Portfolio({portfolioList}) {
             portfolioList.map((portfolio, index)=>{
                 return(
                     <div className='basis-1/3 flex-1 rounded-xl overflow-hidden' href={portfolio.url} key={index}>
-                        <a href={portfolio.url} target="_blank">
+                        <a href={portfolio.url} target="_blank" rel="noopener noreferrer">
                             <Image src={portfolio.image} className=' object-cover hover:scale-110 transition-all ease-in-out' width={'40%'} height={'20%'} layout='responsive'/>
                         </a>
                     </div>
