@@ -29,24 +29,24 @@ export default function Home() {
   const skillsetList = [
     {
       title:'Beautiful Designs',
-      image:'/../public/design.png',
+      image:'/design.png',
       desc:'Creating elegant designs suited for your needs following core design theory.',
       toolTitle: 'Design Tools I Use',
       tools: ['Photoshop','Figma','Adobe XD']
     },
     {
       title:'Clean Programming',
-      image:'/../public/code.png',
+      image:'/code.png',
       desc:'Algorithm understanding, clean programming accompanied by fast learning to achieve high softwaree standards.',
       toolTitle: 'Programming Languages I Use',
       tools: ['Javascript','ReactJS','C#','Git']
     },
     {
       title:'Team Player',
-      image:'/../public/consulting.png',
+      image:'/consulting.png',
       desc:'Worked globally with lots of different culture and friendly faces. Not to mention, agile methodologies with a side of constructive criticism that gets the job done.',
       toolTitle: 'Management Tools I Use',
-      tools: ['Jira','SCRUM','Kanban']
+      tools: ['Jira','SCRUM','Kanban','A/B Testing']
     },
   ]
 
@@ -54,37 +54,37 @@ export default function Home() {
     {
       title: 'Devconnector',
       desc:'MERN stack forum deployed using Heroku',
-      image:'/../public/web1.png',
+      image:'/web1.png',
       url: 'https://mernstack-devconnector.herokuapp.com/',
     },
     {
       title: 'Devconnector',
       desc:'MERN stack forum deployed using Heroku',
-      image:'/../public/web2.png',
+      image:'/web2.png',
       url: '#',
     },
     {
       title: 'Devconnector',
       desc:'MERN stack forum deployed using Heroku',
-      image:'/../public/web3.png',
+      image:'/web3.png',
       url: '#',
     },
     {
       title: 'Devconnector',
       desc:'MERN stack forum deployed using Heroku',
-      image:'/../public/web4.png',
+      image:'/web4.png',
       url: '#',
     },
     {
       title: 'Devconnector',
       desc:'MERN stack forum deployed using Heroku',
-      image:'/../public/web5.png',
+      image:'/web5.png',
       url: '#',
     },
     {
       title: 'Devconnector',
       desc:'MERN stack forum deployed using Heroku',
-      image:'/../public/web6.png',
+      image:'/web6.png',
       url: '#',
     },
   ]
@@ -114,7 +114,7 @@ export default function Home() {
               <RoundedAvatar avatar={deved}/>
             </div>
             <div className='flex-1 flex justify-center align-middle flex-col'>
-              <Intro name="Eunico Cornelius" role="Developer and Designer" desc="Globally adapt professional developer providing SAAS services for programming and prototyping content needs. Contact me down below and let's get crackin!"/>
+              <Intro name="Eunico Cornelius" role="Developer and Designer" desc="Globally adapt professional developer providing SAAS services for programming and prototyping content needs. Contact me down below for further enquiries!"/>
               <SocialMedia socialList={tempSocialMedia}/>
             </div>
           </div>
