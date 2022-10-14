@@ -110,15 +110,16 @@ export default function Home() {
         <section className='min-h-screen'>
           <Navbar resume={'./resume.pdf'} darkmode={darkMode} handleDarkMode={handleDarkMode}/>
           <div className='flex flex-col md:flex-row md:mt-28'>
-            <div className='flex-1 flex justify-center align-middle'>
+            <div className='flex-1 flex justify-center align-middle z-10'>
               <RoundedAvatar avatar={deved}/>
             </div>
-            <div className='flex-1 flex justify-center align-middle flex-col'>
+            <div className='flex-1 flex justify-center align-middle flex-col z-10'>
               <Intro name="Eunico Cornelius" role="Developer and Designer" desc="Globally adapt professional developer providing SAAS services for programming and prototyping content needs. Contact me down below for further enquiries!"/>
               <SocialMedia socialList={tempSocialMedia}/>
             </div>
           </div>
         </section>
+
 
         {/* Second Section */}
         <section className='mb-32'>
@@ -145,7 +146,22 @@ export default function Home() {
             </p>
           </div>
           <Portfolio portfolioList={portfolioList}/>
-          <ContactForm/>
+        </section>
+        <section>
+          {/* Divider*/}
+          <div className='w-screen relative right-10 md:right-20 lg:right-40 bottom-0 z-[0]'>
+            <svg id="visual" viewBox="0 0 1920 400" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
+              <path d="M0 157L175 165L349 101L524 97L698 125L873 121L1047 149L1222 97L1396 153L1571 169L1745 125L1920 169L1920 0L1745 0L1571 0L1396 0L1222 0L1047 0L873 0L698 0L524 0L349 0L175 0L0 0Z" fill="#ffffff"></path>
+              <path d="M0 185L175 221L349 169L524 141L698 181L873 153L1047 213L1222 181L1396 177L1571 245L1745 213L1920 197L1920 167L1745 123L1571 167L1396 151L1222 95L1047 147L873 119L698 123L524 95L349 99L175 163L0 155Z" fill="#d1eee8"></path>
+              <path d="M0 229L175 257L349 241L524 197L698 277L873 253L1047 285L1222 237L1396 265L1571 293L1745 249L1920 297L1920 195L1745 211L1571 243L1396 175L1222 179L1047 211L873 151L698 179L524 139L349 167L175 219L0 183Z" fill="#a1dcd1"></path>
+              <path d="M0 293L175 293L349 293L524 265L698 317L873 305L1047 313L1222 265L1396 333L1571 325L1745 273L1920 333L1920 295L1745 247L1571 291L1396 263L1222 235L1047 283L873 251L698 275L524 195L349 239L175 255L0 227Z" fill="#6ccabb"></path>
+              <path d="M0 401L175 401L349 401L524 401L698 401L873 401L1047 401L1222 401L1396 401L1571 401L1745 401L1920 401L1920 331L1745 271L1571 323L1396 331L1222 263L1047 311L873 303L698 315L524 263L349 291L175 291L0 291Z" fill="#14b8a5"></path>
+            </svg>
+          </div>
+          {/* Colored Background */}
+          <div className='w-screen relative right-10 md:right-20 lg:right-40 bottom-0 bg-teal-500 text-white mt-[-1em]'>
+            <ContactForm/>
+          </div>
         </section>
       </main>
     </div>
