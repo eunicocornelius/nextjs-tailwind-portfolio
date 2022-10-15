@@ -109,7 +109,7 @@ export default function Home() {
 
         <section className='min-h-screen'>
           <Navbar resume={'./resume.pdf'} darkmode={darkMode} handleDarkMode={handleDarkMode}/>
-          <div className='flex flex-col md:flex-row md:mt-28'>
+          <div className='flex flex-col lg:flex-row lg:mt-28'>
             <div className='flex-1 flex justify-center align-middle z-10'>
               <RoundedAvatar avatar={deved}/>
             </div>

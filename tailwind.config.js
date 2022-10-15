@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
       },
+      placeholderColor: {
+        'teal-grey': "rgb(138, 194, 189)",
+      },
       animation: {
         'blob': 'blob ease-in-out infinite 8s',
         'blob-spin': 'blob ease-in-out infinite 8s, spin 100s linear infinite',
