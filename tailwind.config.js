@@ -13,6 +13,16 @@ module.exports = {
       },
       placeholderColor: {
         'teal-grey': "rgb(138, 194, 189)",
+        'dark-blue-grey': "rgb(38, 56, 87)",
+      },
+      backgroundColor: {
+        'blue-grey': 'rgb(14, 21, 33)',
+        'creamyyellow-light': '#f0f3bd',
+        'creamyyellow-normal': '#e9ed9f',
+        'creamyyellow-dark': '#d9de7c',
+        'creamyblue-light': '#19b2bf',
+        'creamyblue-normal': '#00717B',
+        'creamyblue-dark': '#01494f',
       },
       animation: {
         'blob': 'blob ease-in-out infinite 8s',
