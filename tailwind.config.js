@@ -17,6 +17,7 @@ module.exports = {
       animation: {
         'blob': 'blob ease-in-out infinite 8s',
         'blob-spin': 'blob ease-in-out infinite 8s, spin 100s linear infinite',
+        'wiggle': 'wiggle ease-in-out 1s',
       },
       keyframes: {
         blob: {
@@ -26,7 +27,15 @@ module.exports = {
         spin: {
           '0%': { transform: 'rotate(0deg)'},
           '100%': {transform: 'rotate(359deg)'},
-        }
+        },
+        wiggle: {
+          '0%': { transform: 'rotate(0deg)'},
+          '15%': { transform: 'rotate(5deg)'},
+          '25%': { transform: 'rotate(-10deg)'},
+          '50%': { transform: 'rotate(10deg)'},
+          '75%': { transform: 'rotate(-5deg)'},
+          '100%': {transform: 'rotate(0deg)'},
+        },
       }
     },
   },

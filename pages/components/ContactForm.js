@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser';
 
 // @TODO: Fix the layout and Disable the input field once submited.
@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 function ContactForm() {
 
     const form = useRef();
+    const wiggleTitleRef = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -19,10 +20,30 @@ function ContactForm() {
         e.target.reset()
     }
 
+    
+
+    // const wiggleElements = document.querySelectorAll('.contactform-title')
+    // wiggleElements.forEach((el) => wiggleObserver.observe(el))
+
+    useEffect(() => {
+        const wiggleObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if(entry.isIntersecting){
+                    entry.target.classList.add('animate-wiggle');
+                } else {
+                    entry.target.classList.remove('animate-wiggle');
+                }
+            })
+        })
+
+        wiggleObserver.observe(wiggleTitleRef.current)
+    })
+
   return (
     <div className='m-auto w-auto px-10 md:w-1/2 '>
         <div className='pt-10 pb-20'>
-            <div className='text-6xl font-burtons pb-5 text-center'>
+            <div className='text-6xl font-burtons pb-5 text-center' ref={wiggleTitleRef}>
                 Let&apos;s Talk
             </div>
             <div className='text-base text-center md:text-xl'>

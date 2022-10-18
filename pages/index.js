@@ -150,7 +150,7 @@ export default function Home() {
         <section>
           {/* Divider*/}
           <div className='w-screen relative right-10 md:right-20 lg:right-40 bottom-0 z-[0]'>
-            <svg id="visual" viewBox="0 0 1920 400" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
+            <svg id="visual" viewBox="0 0 1920 400" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
               <path d="M0 157L175 165L349 101L524 97L698 125L873 121L1047 149L1222 97L1396 153L1571 169L1745 125L1920 169L1920 0L1745 0L1571 0L1396 0L1222 0L1047 0L873 0L698 0L524 0L349 0L175 0L0 0Z" fill="#ffffff"></path>
               <path d="M0 185L175 221L349 169L524 141L698 181L873 153L1047 213L1222 181L1396 177L1571 245L1745 213L1920 197L1920 167L1745 123L1571 167L1396 151L1222 95L1047 147L873 119L698 123L524 95L349 99L175 163L0 155Z" fill="#d1eee8"></path>
               <path d="M0 229L175 257L349 241L524 197L698 277L873 253L1047 285L1222 237L1396 265L1571 293L1745 249L1920 297L1920 195L1745 211L1571 243L1396 175L1222 179L1047 211L873 151L698 179L524 139L349 167L175 219L0 183Z" fill="#a1dcd1"></path>
