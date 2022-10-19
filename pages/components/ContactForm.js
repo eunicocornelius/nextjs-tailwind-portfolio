@@ -20,11 +20,7 @@ function ContactForm() {
         e.target.reset()
     }
 
-    
-
-    // const wiggleElements = document.querySelectorAll('.contactform-title')
-    // wiggleElements.forEach((el) => wiggleObserver.observe(el))
-
+    // Wiggle on scroll view
     useEffect(() => {
         const wiggleObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {

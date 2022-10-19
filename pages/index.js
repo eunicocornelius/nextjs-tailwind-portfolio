@@ -16,6 +16,7 @@ import SocialMedia from './components/SocialMedia'
 import SkillList from './components/SkillList'
 import Portfolio from './components/Portfolio'
 import ContactForm from './components/ContactForm'
+import WorldMap from './components/WorldMap'
 
 export default function Home() {
 
@@ -106,7 +107,7 @@ export default function Home() {
       </Head>
 
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
-
+        {/* Landing Page Intro Section */}
         <section className='min-h-screen'>
           <Navbar resume={'./resume.pdf'} darkmode={darkMode} handleDarkMode={handleDarkMode}/>
           <div className='flex flex-col lg:flex-row lg:mt-28'>
@@ -120,8 +121,7 @@ export default function Home() {
           </div>
         </section>
 
-
-        {/* Second Section */}
+        {/* Skills Section */}
         <section className='mb-32 mt-32 md:mt-0'>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Skills I Offer</h3>
@@ -137,7 +137,19 @@ export default function Home() {
           {/* Skills Cards */}
           <SkillList skillsetList={skillsetList}/>
         </section>
-        {/* Third Section */}
+
+        {/* Companies Section */}
+        <section>
+          <div className='mb-32'>
+            {/* <img src='/world-map.png' alt='world-map'/> */}
+            <h3 className='text-3xl pb-16 dark:text-white'>Company Experiences</h3>
+            <div className='flex justify-center'>
+              <WorldMap/>
+            </div>
+          </div>
+        </section>
+
+        {/* Portfolio Section */}
         <section>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
