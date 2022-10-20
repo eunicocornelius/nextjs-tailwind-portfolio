@@ -90,6 +90,69 @@ export default function Home() {
     },
   ]
 
+  const companiesList = [
+    {
+      name: 'PT. Indocement Tunggal Prakarsa',
+      logo: '/company_logos/company_indocement',
+      desc: ['Introduced frontend dashboard upgrade for the company using .NET', 'Improved web supervision of 50+ facilities by providing realtime data using SignalR','Created new chat feature for improved communications via dashboard between facilities'],
+      location: 'Jakarta',
+      country: 'Indonesia',
+      startDate: '11/2016',
+      endDate: '02/2017',
+      role: 'Web Developer',
+      skills: ['ASP.NET', 'C#', 'SignalR'],
+      industry: 'Cement Company',
+    },
+    {
+      name: 'Seriotec GmbH',
+      logo: '/company_logos/company_seriotec',
+      desc: ['Built and optimized front-end features', 'Developed live new feed displaying most recent new using API calls', 'Created and trained a chatbot in Facebook Messenger that allows customers to purchase cinema tickets autonomously in Facebook'],
+      location: 'Munich',
+      country: 'Germany',
+      startDate: '03/2018',
+      endDate: '08/2018',
+      role: 'Fullstack Feveloper Intern',
+      skills: ['HTML', 'CSS', 'PHP', 'JS', 'Processwire'],
+      industry: 'Media/Film',
+    },
+    {
+      name: 'PT. Inti Sinergi Teknologi',
+      logo: '/company_logos/company_inergi',
+      desc: ['Developed end-to-end machine-learning app using Python, Tensorflow, and Keras converting physical photo IDs into digital text', 'Single Handedly built a self-developed CRNN neural network with an accuracy of 95% that is the central piece of the photo ID app','Created the web interface for the machine learning model in Flask / HTML enabling users to use the ML tool in real-time.', 'Submitted a white paper with a team of three, containing technical findings of the neural network project', 'Built machine learning model that converts images of electricity meters (PLN) into digital form with 80% accuracy using 1 million+ self annotated image data', 'Built backend server REST API to serve the model above and company projects using MongoDB, Werkzeug, Bcrypt, and FlaskJWT', 'Conducted user load testing on docker swarm using locust and multiple docker containers with 6 nodes (1 manager, 5 workers)'],
+      location: 'Jakarta',
+      country: 'Indonesia',
+      startDate: '02/2019',
+      endDate: '07/2020',
+      role: 'Research Assistant & Software Developer',
+      skills: ['Python', 'Tensorflow', 'Keras', 'Flask', 'HTML', 'MongoDB', 'Werkzeug', 'Bcrypt', 'FlaskJWT', 'Docker Swarm'],
+      industry: 'Software',
+    },
+    {
+      name: 'PT. Cognixy',
+      logo: '/company_logos/company_cognixy',
+      desc: ['Developed in an agile environment team an Intelligent Attendance System that utilizes neural networks to detect human beings and their thermal signatures to prevent covid spread with Python (Flask), ZMQ, Redis, MySQL, Quasar and VueJS', 'Built attendance mailing system that envelops NN model above to notify employers of COVID symptomatic employees', 'Product bought by ShapesAI and used for COVID awareness in London, broadcasted on BBC', 'Designed and developed UI for mailing system frontend', 'Integrated image recognition API into the mailing system interface', 'Developed E2E CI/CD workflow using bitbucket pipelines with Cypress for automation testing per container', 'Created D3JS dashboard that warns COVID risks in train stops for Indonesian Railway Company (KCI)'],
+      location: 'Jakarta',
+      country: 'Indonesia',
+      startDate: '07/2020',
+      endDate: '09/2020',
+      role: 'Fullstack Developer',
+      skills: ['VueJS', 'Python', 'Flask', 'ZMQ', 'Redis', 'MySQL', 'Quasar', 'Git' ],
+      industry: 'Software',
+    },
+    {
+      name: 'Labster ApS',
+      logo: '/company_logos/labster',
+      desc: ['Succeeded in boosting production efficiency by 300% using team coordination and agile methods using Jira (SCRUM and Kanban)', 'Managed, developed and released into production more than 30 higher education simulations with topics in natural sciences including stereochemistry, synthesis of aspirin, melting point apparatus and more with accessibility friendly features via XML and Unity with A/B testing', 'Built reusable code templates and building blocks that are reusable developers to quickly implement for multiple other simulations', 'Fixed bugs, version controlled, and maintained on 20+ simulations that satisfy quality assured standards for production'],
+      location: 'Bali',
+      country: 'Indonesia',
+      startDate: '01/2021',
+      endDate: '09/2022',
+      role: 'Content Unity Developer',
+      skills: ['XML', 'C#', 'Unity', 'Jira', 'Figma', 'Git'],
+      industry: 'Educational Software',
+    },
+  ]
+
   const [darkMode, setDarkMode] = useState(false);
 
   const handleDarkMode = (e) =>{
@@ -141,10 +204,13 @@ export default function Home() {
         {/* Companies Section */}
         <section>
           <div className='mb-32'>
-            {/* <img src='/world-map.png' alt='world-map'/> */}
             <h3 className='text-3xl pb-16 dark:text-white'>Company Experiences</h3>
             <div className='flex justify-center'>
-              <WorldMap/>
+              {/* <img src='/world-map.png' alt='world-map'/> */}
+              {/* <WorldMap/> */}
+              <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700'>
+                TEST
+              </div>
             </div>
           </div>
         </section>
