@@ -17,6 +17,7 @@ import SkillList from './components/SkillList'
 import Portfolio from './components/Portfolio'
 import ContactForm from './components/ContactForm'
 import WorldMap from './components/WorldMap'
+import CountrySelection from './components/CountrySelection'
 
 export default function Home() {
 
@@ -136,7 +137,7 @@ export default function Home() {
       startDate: '07/2020',
       endDate: '09/2020',
       role: 'Fullstack Developer',
-      skills: ['VueJS', 'Python', 'Flask', 'ZMQ', 'Redis', 'MySQL', 'Quasar', 'Git' ],
+      skills: ['VueJS', 'Python', 'Flask', 'ZMQ', 'Redis', 'MySQL', 'Quasar', 'Git', 'Trello' ],
       industry: 'Software',
     },
     {
@@ -208,9 +209,7 @@ export default function Home() {
             <div className='flex justify-center'>
               {/* <img src='/world-map.png' alt='world-map'/> */}
               {/* <WorldMap/> */}
-              <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700'>
-                TEST
-              </div>
+              <CountrySelection companies={companiesList}/>
             </div>
           </div>
         </section>
