@@ -5,7 +5,7 @@
 //        - Move mock data somewhere else to prevent bloating
 
 import Head from 'next/head'
-import deved from '../public/dev-ed-wave.png'
+import deved from '../public/profile_cropped.png'
 
 import { useState } from 'react'
 
@@ -54,37 +54,37 @@ export default function Home() {
     {
       title: 'Devconnector',
       desc:'MERN stack forum deployed using Heroku',
-      image:'/web1.png',
-      url: 'https://mernstack-devconnector.herokuapp.com/',
+      image:'/devconnector.png',
+      url: 'https://github.com/eunicocornelius/mern_devconnector',
     },
     {
-      title: 'Devconnector',
-      desc:'MERN stack forum deployed using Heroku',
-      image:'/web2.png',
-      url: '#',
+      title: 'Drawable',
+      desc:'Online paint',
+      image:'/drawable.png',
+      url: 'https://github.com/eunicocornelius/drawable',
     },
     {
-      title: 'Devconnector',
-      desc:'MERN stack forum deployed using Heroku',
-      image:'/web3.png',
-      url: '#',
+      title: 'Ravenous',
+      desc:'Food review using Yelp API',
+      image:'/ravenous.png',
+      url: 'https://github.com/eunicocornelius/Ravenous-YelpClone',
     },
     {
-      title: 'Devconnector',
-      desc:'MERN stack forum deployed using Heroku',
-      image:'/web4.png',
-      url: '#',
+      title: 'Ball Battle',
+      desc:'Tactical ball battle game created using Unity with mobile AR support',
+      image:'/ballbattle.png',
+      url: 'https://github.com/eunicocornelius/AR_BallBattle',
     },
     {
-      title: 'Devconnector',
-      desc:'MERN stack forum deployed using Heroku',
-      image:'/web5.png',
-      url: '#',
+      title: 'Jammming',
+      desc:'Playlist maker using Spotify API',
+      image:'/jammming.png',
+      url: 'https://github.com/eunicocornelius/Jammming',
     },
     {
-      title: 'Devconnector',
-      desc:'MERN stack forum deployed using Heroku',
-      image:'/web6.png',
+      title: 'Coming Soon',
+      desc:'Under construction...',
+      image:'/coming_soon.jpg',
       url: '#',
     },
   ]
