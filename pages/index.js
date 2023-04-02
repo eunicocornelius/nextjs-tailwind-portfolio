@@ -72,7 +72,7 @@ export default function Home() {
     {
       title: 'Ball Battle',
       desc:'Tactical ball battle game created using Unity with mobile AR support',
-      image:'/ballbattle.png',
+      image:'/ball_battle.png',
       url: 'https://github.com/eunicocornelius/AR_BallBattle',
     },
     {
